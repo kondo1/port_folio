@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="Web,ポートフォリオ,デザイン,ロゴ,レスポンシブ,Web制作">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" href="./css/port.css">
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+  
+<body>
+  <header>
+    <div class="header_container">
+      <div class="header_title">
+        <a href="index.html"><img src="./images/img_portfolio.png" alt="" /></a>
+      </div>
+      <div class="header_list">
+        <ul>
+          <li><a href="index.html">top</a></li>
+          <li><a href="index.html">profile</a></li>
+          <li><a href="index.html">works</a></li>
+          <li><a href="index.html">contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  <div class= "head_wrap">
+      <div class="img_01"><img src="./images/img_sukasi.png" alt="" /></div>
+      <div class="img_02"><img src="./images/img_portfolio_site.png" alt="" /></div>
+  </div>
+
+  <section id="profile">
+    <h1>profile</h1>
+    <div>
+      <p>webデザイナーを目指して、オンラインスクールにて学習中のKondoのポートフォリオサイトです。<br>
+         コーディング、イラスト作成などいろいろなことにチャレンジしたいです！</p>
+    </div>
+  </section>
+  
+  <section id="works">
+    <h1>works</h1>
+    <div class="works_container">
+      <div class="works_box">
+        <img src="./images/img_libra.png" alt="libra">
+		<p>libla</p>
+      </div>
+      <div class="works_box">
+        <img src="./images/img_cancer.png" alt="cancer">
+		<p>cancer</p>
+      </div>
+      <div class="works_box">
+        <img src="./images/img_gemini.png" alt="gemini">
+		<p>gemini</p>
+      </div>
+    </div>
+  </section> 
+  
+  <section id="contact">
+    <h1>contact</h1>
+    <div class="works_container">
+      <div class="works_box">
+        <img src="./images/img_git.png" alt="GitHub">
+		<p>GitHub</p>
+      </div>
+      <div class="works_box">
+        <img src="./images/img_mail.png" alt="mail">
+		<p>Mail</p>
+      </div>
+    </div>
+  </section>
+  
+  <script type="text/javascript">
+    $(function(){
+      setInterval("bgslide()" , 50);	
+    });
+ 
+    var current = 0;
+    
+    function bgslide(){
+	  current -= 1;
+	  $('.head_wrap').css("background-position", current+"px 0px");
+    }
+  </script>
+
+</body>
+
+</html>
+  

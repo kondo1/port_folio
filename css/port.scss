@@ -1,0 +1,188 @@
+//-----common-----//
+$basecolor : #0f0f0f; //濃グレー
+$subcolor  : #000;    //黒
+$keycolor  : #fff;    //白
+
+body{
+   background-color: $basecolor;
+   font-family: "Times New Roman" , Arial;
+}
+//-----common-----//
+
+//-----header-----//
+header{
+  height: 80px;
+  width: 100%;
+  background-color: $subcolor;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  .header_container{
+     display: flex;
+    .header_title{
+      width: 60%;
+      padding-top: 20px;
+      img{
+        max-width: 70%;
+        height: auto;
+        margin-left: 20px;
+      }
+    }
+    .header_list{
+      width: 40%;
+      ul{
+      display: flex;
+      justify-content: space-between;
+      }
+    }
+  }
+}
+//-----header-----//
+
+//-----slider-----//
+.head_wrap {
+  margin-top: 80px;
+  padding: 0px;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background: url(../images/yozora.png) repeat-x;
+  .img_01{
+    display: block;
+    width: 40%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .img_02{
+    img{
+    display: block;
+    width: 20%;
+    height: auto;
+    right: 10%;
+
+    }
+  }
+}
+
+//-----slider-----//
+
+//-----profile-----//
+#profile{
+  height: 400px;
+  text-align: center;
+  h1{
+    letter-spacing: 0.25em;
+    margin: 50px;
+    color: $keycolor;
+    font-size : 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+  h1:before, h1:after {
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 1px;
+    content: '\a0';
+    background-color: #ddd;
+    position: relative;
+    top: 0.5em;
+  }
+  p{
+    letter-spacing: 0.1em;
+    color: $keycolor;
+    font-size : 16px;
+  }
+}
+//-----profile-----//
+
+//-----works-----//
+#works{
+  height: 450px;
+  background-color: $subcolor;
+  h1{
+    letter-spacing: 0.25em;
+    margin: 50px;
+    padding-top: 50px;
+    color: $keycolor;
+    font-size : 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+  h1:before, h1:after {
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 1px;
+    content: '\a0';
+    background-color: #ddd;
+    position: relative;
+    top: 0.5em;
+  }
+  .works_container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  .works_box {
+  text-align: center;
+  padding: 5px;
+    img {
+      width: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+    }
+    p{
+      color: $keycolor;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      letter-spacing: 0.25em;
+    }
+  }
+}
+//-----works-----//
+//-----contact-----//
+#contact{
+height: 300px;
+  h1{
+    letter-spacing: 0.25em;
+    margin: 50px;
+    padding-top: 50px;
+    color: $keycolor;
+    font-size : 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+  h1:before, h1:after {
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 1px;
+    content: '\a0';
+    background-color: #ddd;
+    position: relative;
+    top: 0.5em;
+  }
+}
+//-----contact-----//
+
+
