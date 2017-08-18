@@ -31,8 +31,14 @@ header{
     .header_list{
       width: 40%;
       ul{
-      display: flex;
-      justify-content: space-between;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        }
+      a{
+        color: $keycolor;
+        font-size: 20px;
+        text-decoration: none;
       }
     }
   }
@@ -47,29 +53,13 @@ header{
   height: 300px;
   background-size: cover;
   background: url(../images/yozora.png) repeat-x;
-  .img_01{
-    display: block;
-    width: 40%;
-    height: 300px;
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .img_02{
-    img{
-    display: block;
-    width: 20%;
-    height: auto;
-    right: 10%;
-
-    }
-  }
 }
 
 //-----slider-----//
 
 //-----profile-----//
 #profile{
-  height: 400px;
+  height: 250px;
   text-align: center;
   h1{
     letter-spacing: 0.25em;
@@ -94,16 +84,45 @@ header{
     top: 0.5em;
   }
   p{
+    width: 50%;
     letter-spacing: 0.1em;
+    text-align: left;
     color: $keycolor;
     font-size : 16px;
+    margin: 0 auto;
+  }
+  h2{
+    font-size: 18px;
+    color: $keycolor;
+    margin: 20px;
+    text-align: center;
+  }
+  .profile_container{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+	  display: flex;
+    flex-wrap: wrap;
+	  justify-content: center;
+  }
+  .profile_box {
+    color: $keycolor;
+    width: 50%;
+    text-align: center;
+    ul{
+      margin-left: 10px;
+    }
+    li{
+      margin: 5px;
+    }
   }
 }
 //-----profile-----//
 
 //-----works-----//
 #works{
-  height: 450px;
+  width: 100%;
+  height: 400px;
   background-color: $subcolor;
   h1{
     letter-spacing: 0.25em;
@@ -128,34 +147,47 @@ header{
     position: relative;
     top: 0.5em;
   }
+
   .works_container{
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
-	display: flex;
-    flex-wrap: wrap;
-	justify-content: space-between;
+	  display: flex;
+    //flex-wrap: wrap;
+	  justify-content: center;
   }
   .works_box {
-  text-align: center;
-  padding: 5px;
+    //width: 33%;
+    flex: 1;
+    background-color: #000;
+    text-align: center;
     img {
-      width: 80%;
+      width: 50%;
       display: block;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 15px;
     }
-    p{
+  }
+  p{
       color: $keycolor;
-      font-size: 20px;
-      font-weight: bold;
-      font-style: italic;
-      letter-spacing: 0.25em;
-    }
+  }
+  @media (max-width: 550px) { //SPver
+ 
+      .works_container{
+        flex-wrap: wrap;
+	      justify-content: space-between;
+      }
+      .works_box {
+        width: 40%;
+        img {
+          width: 70%;
+        }
+      }
+    
   }
 }
 //-----works-----//
+
 //-----contact-----//
 #contact{
 height: 300px;
@@ -181,6 +213,31 @@ height: 300px;
     background-color: #ddd;
     position: relative;
     top: 0.5em;
+  }
+  .contact_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  text-align: center;
+ background-color: $basecolor;
+  }
+
+  .contact_box {
+    text-align: center;
+	  margin-bottom: 3rem;
+	  background-color: $basecolor;
+  }
+
+  .contact_box img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	width: 50%;
+	height: auto;
+  }
+  p{
+    color: $keycolor;
   }
 }
 //-----contact-----//
