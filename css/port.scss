@@ -57,9 +57,18 @@ header{
 
 //-----slider-----//
 
+#pro{
+  margin-top: 10px;
+  height: 30px;
+}
+#wor{
+  background-color: $subcolor;
+  height: 30px;
+}
+
 //-----profile-----//
 #profile{
-  height: 250px;
+  height: 350px;
   text-align: center;
   h1{
     letter-spacing: 0.25em;
@@ -122,11 +131,11 @@ header{
 //-----works-----//
 #works{
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-color: $subcolor;
   h1{
     letter-spacing: 0.25em;
-    margin: 50px;
+    margin-bottom: 50px;
     padding-top: 50px;
     color: $keycolor;
     font-size : 30px;
@@ -149,6 +158,7 @@ header{
   }
 
   .works_container{
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 	  display: flex;

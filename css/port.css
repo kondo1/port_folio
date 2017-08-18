@@ -37,8 +37,16 @@ header {
   background-size: cover;
   background: url(../images/yozora.png) repeat-x; }
 
+#pro {
+  margin-top: 10px;
+  height: 30px; }
+
+#wor {
+  background-color: #000;
+  height: 30px; }
+
 #profile {
-  height: 250px;
+  height: 350px;
   text-align: center; }
   #profile h1 {
     letter-spacing: 0.25em;
@@ -90,11 +98,11 @@ header {
 
 #works {
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-color: #000; }
   #works h1 {
     letter-spacing: 0.25em;
-    margin: 50px;
+    margin-bottom: 50px;
     padding-top: 50px;
     color: #fff;
     font-size: 30px;
@@ -114,6 +122,7 @@ header {
     position: relative;
     top: 0.5em; }
   #works .works_container {
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
