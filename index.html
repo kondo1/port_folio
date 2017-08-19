@@ -10,7 +10,6 @@
   <!-- jQuery -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
-  
 <body>
   <header>
     <div class="header_container">
@@ -27,21 +26,15 @@
       </div>
     </div>
   </header>
-  
   <div class= "head_wrap"></div>
-  
-  <!-- 移動用 -->
-  <div id="pro"></div>
-  
   <section id= "profile">
-    <h1>profile</h1>
+    <h1 id="pro">profile</h1>
     <div>
       <p>webデザイナーを目指して、オンラインスクールにて学習中のKondoのポートフォリオサイトです。<br>
          コーディング、イラスト作成などいろいろなことにチャレンジしたいです！</p>
     </div>
     <h2>学習中スキル</h2>
     <div class ="profile_container">
-      
       <div class ="profile_box">
         <ul>
           <li>HTML</li>
@@ -49,7 +42,6 @@
           <li>JavaScript/Jquery</li>
         </ul>
       </div>
-      
       <div class ="profile_box">
         <ul>
           <li>Photoshop</li>
@@ -57,65 +49,36 @@
           <li>AccessVBA</li>
         </ul>
       </div>
-      
     </div>
   </section>
-  
-  <!-- 移動用 -->
-  <div id="wor"></div>
-  
   <section id="works">
-    <h1>works</h1>
-    
+    <h1 id="wor">works</h1>
     <div class= "works_container">
-     
       <div class= "works_box">
         <img  src="./images/img_libra.png" alt="libra">
         <p>libra</p>
       </div>
-      
       <div class= "works_box">
         <img  src="./images/img_cancer.png" alt="cancer">
 		    <p>cancer</p>
       </div>
-      
       <div class= "works_box">
         <img  src="./images/img_gemini.png" alt="gemini">
 		    <p>gemini</p>
       </div>
-   
     </div>
-  
   </section> 
-  
   <section id="contact">
     <h1>contact</h1>
     <div class="contact_container">
       <div class="contact_box">
-        <img src="./images/img_git.png" alt="GitHub">
-		    <p>GitHub</p>
+        <a href="https://github.com/kondo1" target="_blank"><img src="./images/img_git.png" alt="GitHub"/></a>
       </div>
       <div class="contact_box">
-        <img src="./images/img_mail.png" alt="mail">
-		    <p>Mail</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvTuuv6AQWR9uZ3TbXrIEopY5KJpqbt89xQc1MxA8bEthv6Q/viewform?usp=sf_link" target="_blank"><img src="./images/img_mail.png" alt="mail"/></a>
       </div>
     </div>
   </section>
-  
-  <script type="text/javascript">
-    $(function(){
-      setInterval("bgslide()" , 50);	
-    });
- 
-    var current = 0;
-    
-    function bgslide(){
-	  current -= 1;
-	  $('.head_wrap').css("background-position", current+"px 0px");
-    }
-  </script>
-
 </body>
-
 </html>
   
