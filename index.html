@@ -16,13 +16,25 @@
       <div class="header_title">
         <a href="index.html"><img src="./images/img_portfolio.png" alt="" /></a>
       </div>
+      <!-- pc_navi -->
       <div class="header_list">
-        <ul>
-          <li><a href="index.html">top</a></li>
-          <li><a href="#pro">profile</a></li>
-          <li><a href="#wor">works</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
+        <div class ="pc_navi">
+          <ul>
+            <li><a href="index.html">top</a></li>
+            <li><a href="#pro">profile</a></li>
+            <li><a href="#wor">works</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+        <div class="navi_b"><img id="sp_navi_btn" src="./images/img_menu.png" alt="sp_navi"/></div>
+        <div class ="sp_navi">
+          <ul>
+            <li><a href="index.html">top</a></li>
+            <li><a href="#pro">profile</a></li>
+            <li><a href="#wor">works</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -79,6 +91,13 @@
       </div>
     </div>
   </section>
+<script>
+  $(document).ready(function(){
+    $("#sp_navi_btn").click(function(){
+      $(".sp_navi").slideToggle();
+    });
+  });
+</script>
 </body>
 </html>
   

@@ -28,6 +28,52 @@ header{
         margin-left: 20px;
       }
     }
+  }
+  @media (max-width: 550px) { //SPver
+    .pc_navi{
+      display: none;
+    }
+    .sp_navi{
+      display: none;
+    }
+    .header_list{
+      width: 40%;
+      text-align: center;
+      ul{
+        margin-top: 30px;
+        display: colmun;
+        justify-content: space-around;
+        background-color: $subcolor;
+        }
+      li{
+        padding: 20px;
+      }
+      a{
+        color: $keycolor;
+        font-size: 20px;
+        text-decoration: none;
+      }
+    }
+    .navi_b{
+      margin-left: 40px;
+      img{
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35px;
+        height: auto;
+      }
+    }
+  }
+  @media (min-width: 550px) { //PCver
+    .sp_navi{
+      display: none;
+    }
+    #sp_navi_btn{
+      display: none;
+      height: auto;
+    }
     .header_list{
       width: 40%;
       ul{
@@ -92,7 +138,7 @@ header{
     top: 0.5em;
   }
   p{
-    width: 50%;
+    width: 70%;
     letter-spacing: 0.1em;
     text-align: left;
     color: $keycolor;
@@ -123,6 +169,9 @@ header{
     li{
       margin: 5px;
     }
+  }
+  @media (max-width: 550px) { //SPver
+      height: 450px;
   }
 }
 //-----profile-----//
@@ -158,42 +207,49 @@ header{
     position: relative;
     top: 0.5em;
   }
-
   .works_container{
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 	  display: flex;
-	  justify-content: center;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
   }
-  .works_box {
-    flex: 1;
-    background-color: #000;
-    text-align: center;
-    img {
-      width: 50%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 15px;
+  @media (min-width: 550px) { //PCver
+    .works_box {
+      flex: 1;
+      background-color: #000;
+      text-align: center;
+      img {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+      }
+    }
+    p{
+     color: $keycolor;
     }
   }
-  p{
-      color: $keycolor;
-  }
   @media (max-width: 550px) { //SPver
- 
-      .works_container{
-        flex-wrap: wrap;
-	      justify-content: space-between;
+    height: 500px;
+    .works_box {
+      width: 40%;
+      background-color: #000;
+      text-align: center;
+      img {
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
       }
-      .works_box {
-        width: 40%;
-        img {
-          width: 70%;
-        }
-      }
-    
+    }
+    p{
+      color: $keycolor;
+      padding-bottom: 10px;
+    }
   }
 }
 //-----works-----//
